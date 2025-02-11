@@ -1,6 +1,56 @@
 @import "./base.css";
 
-body {
-    background-color: #FFFFFF;
-    color: #FF7B54;
+.speakers .main {
+  padding: 50px 150px;
+}
+
+.speakers .main__title {
+  font-size: 98px;
+}
+
+.shopping-cart-icon--primary g path {
+  fill: var(--color-primary);
+}
+
+.speakers__wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 200px;
+  row-gap: 120px;
+}
+.speaker__wrapper {
+  max-width: 460px;
+  color: var(--color-text-on-secondary);
+}
+.speaker__photo {
+  width: 310px;
+  height: 310px;
+  object-fit: cover;
+  object-position: top;
+  margin-bottom: 36px;
+}
+.speaker__name {
+  font-size: 32px;
+  color: var(--color-primary);
+  margin-bottom: 20px;
+}
+.speaker__company {
+  font-size: 24px;
+  margin-bottom: 32px;
+}
+.speaker__bio {
+  font-size: 20px;
+}
+
+@media (max-width: 1000px) {
+  .speakers .speakers__wrapper {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 850px) {
+  .nav {
+    background-color: var(--color-text-on-primary);
+    color: var(--color-primary);
+  }
 }

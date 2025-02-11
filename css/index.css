@@ -1,12 +1,33 @@
 @import "./base.css";
 
-.main {
-  padding: 150px;
-}
-.main__heading {
-  font-size: 128px;
+.home .main__heading {
+  font-size: 120px;
   font-weight: bold;
 }
-.main__sub-heading {
+.home .main__sub-heading {
   font-size: 40px;
+}
+
+.home .menu path {
+  fill: var(--color-text-on-primary);
+}
+
+.home .close path {
+  fill: var(--color-text-on-primary);
+}
+
+@media (max-width: 1200px) {
+  .home .main__heading {
+    font-size: 70px;
+  }
+}
+
+@media (max-width: 600px) {
+  .home .main__heading {
+    font-size: 40px;
+  }
+
+  .home .main__sub-heading {
+    font-size: 24px;
+  }
 }
